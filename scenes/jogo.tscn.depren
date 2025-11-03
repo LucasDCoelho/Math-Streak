@@ -27,9 +27,9 @@ anchor_top = 0.05
 anchor_right = 0.7
 anchor_bottom = 0.15
 offset_left = -46.0
-offset_top = -38.0
+offset_top = -7.0
 offset_right = 55.0
-offset_bottom = 61.0
+offset_bottom = 92.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 48
 text = "Pontuação: 0"
@@ -53,10 +53,10 @@ alignment = 1
 [node name="Dice1" type="TextureRect" parent="DiceArea"]
 layout_mode = 2
 texture = ExtResource("2_1b3iq")
-expand_mode = 2
-stretch_mode = 4
+expand_mode = 3
+stretch_mode = 5
 
-[node name="OperationLabel" type="Label" parent="DiceArea"]
+[node name="Operration1" type="Label" parent="DiceArea"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "+"
@@ -66,10 +66,10 @@ vertical_alignment = 1
 [node name="Dice2" type="TextureRect" parent="DiceArea"]
 layout_mode = 2
 texture = ExtResource("2_1b3iq")
-expand_mode = 2
-stretch_mode = 4
+expand_mode = 3
+stretch_mode = 5
 
-[node name="AnswersArea" type="HBoxContainer" parent="."]
+[node name="AnswerArea" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.2
@@ -85,11 +85,11 @@ grow_vertical = 2
 theme_override_constants/separation = 60
 alignment = 1
 
-[node name="AnswerLeft" type="Panel" parent="AnswersArea"]
+[node name="AnswerLeft" type="Panel" parent="AnswerArea"]
 custom_minimum_size = Vector2(300, 180)
 layout_mode = 2
 
-[node name="Label" type="Label" parent="AnswersArea/AnswerLeft"]
+[node name="Label" type="Label" parent="AnswerArea/AnswerLeft"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -107,12 +107,12 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AnswerUp" type="Panel" parent="AnswersArea"]
+[node name="AnswerCenter" type="Panel" parent="AnswerArea"]
 custom_minimum_size = Vector2(300, 180)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Label" type="Label" parent="AnswersArea/AnswerUp"]
+[node name="Label" type="Label" parent="AnswerArea/AnswerCenter"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -128,12 +128,12 @@ grow_vertical = 2
 theme_override_font_sizes/font_size = 60
 text = "0"
 
-[node name="AnswerRight" type="Panel" parent="AnswersArea"]
+[node name="AnswerRight" type="Panel" parent="AnswerArea"]
 custom_minimum_size = Vector2(300, 180)
 layout_mode = 2
 size_flags_horizontal = 4
 
-[node name="Label" type="Label" parent="AnswersArea/AnswerRight"]
+[node name="Label" type="Label" parent="AnswerArea/AnswerRight"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5

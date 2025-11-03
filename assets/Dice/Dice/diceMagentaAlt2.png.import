@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b8j4f10p5tp02"
-path="res://.godot/imported/dice_2.png-64a5879af16ff021d6778409f45d889b.ctex"
+uid="uid://c6p7552ll6l5y"
+path="res://.godot/imported/diceMagentaAlt2.png-2087dce0948d69d87ce17149efcef81c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/kenney_playing-cards-pack/PNG/Cards (small)/dice_2.png"
-dest_files=["res://.godot/imported/dice_2.png-64a5879af16ff021d6778409f45d889b.ctex"]
+source_file="res://assets/Dice/Dice/diceMagentaAlt2.png"
+dest_files=["res://.godot/imported/diceMagentaAlt2.png-2087dce0948d69d87ce17149efcef81c.ctex"]
 
 [params]
 
