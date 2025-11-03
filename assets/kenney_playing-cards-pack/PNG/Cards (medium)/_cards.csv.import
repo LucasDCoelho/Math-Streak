@@ -1,0 +1,15 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://b275wdj33kgy4"
+valid=false
+
+[deps]
+
+source_file="res://assets/kenney_playing-cards-pack/PNG/Cards (medium)/_cards.csv"
+
+[params]
+
+compress=true
+delimiter=0
