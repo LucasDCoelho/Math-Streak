@@ -17,7 +17,11 @@ var generator := preload("res://scripts/question_generator.gd").new()
 func _ready():
 	randomize()
 	for i in range(1, 7):
+<<<<<<< HEAD
 		dice_textures.append(load("res://assets/Dice/Dice/diceRed%d.png" % i))
+=======
+		dice_textures.append(load("res://assets/dice_%d.png" % i))
+>>>>>>> 0333f842f23c8eac56b9db523c083d303cb2fd2c
 	_update_score()
 	_generate_question()
 	set_process_input(true)
@@ -31,7 +35,11 @@ func _generate_question():
 	
 	dice1.texture = dice_textures[num1 - 1]
 	dice2.texture = dice_textures[num2 - 1]
+<<<<<<< HEAD
 	op_label.text = changeOp(op)
+=======
+	op_label.text = op
+>>>>>>> 0333f842f23c8eac56b9db523c083d303cb2fd2c
 
 	correct_index = randi() % 3
 
@@ -49,6 +57,7 @@ func _generate_question():
 
 	current_answer = result
 
+<<<<<<< HEAD
 func changeOp(op) -> String:
 	match op:
 		"/":
@@ -57,6 +66,8 @@ func changeOp(op) -> String:
 			op = "x"
 	return op;
 
+=======
+>>>>>>> 0333f842f23c8eac56b9db523c083d303cb2fd2c
 func _input(event):
 	if event.is_action_pressed("ui_left"):
 		_check_answer(0)
