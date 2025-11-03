@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bejtrhg4b6l1e"]
+[gd_scene load_steps=5 format=3 uid="uid://bejtrhg4b6l1e"]
 
 [ext_resource type="Script" uid="uid://dssrlqu40ehht" path="res://scripts/jogo.gd" id="1_1b3iq"]
 [ext_resource type="Texture2D" uid="uid://cijk56r0xxgbr" path="res://assets/Gemini_Generated_Image_ogf5gxogf5gxogf5 1.png" id="1_sq8yp"]
-[ext_resource type="Texture2D" uid="uid://cymube631iv2h" path="res://assets/kenney_playing-cards-pack/PNG/Cards (medium)/dice_1.png" id="2_1b3iq"]
+[ext_resource type="Texture2D" uid="uid://cpetbq6cor7ia" path="res://assets/Dice/Dice/diceRed1.png" id="3_k05ng"]
+[ext_resource type="Texture2D" uid="uid://dypc3qmswve58" path="res://assets/Dice/Dice/diceRed2.png" id="4_k05ng"]
 
 [node name="Jogo" type="Control"]
 layout_mode = 3
@@ -43,29 +44,29 @@ anchor_left = 0.25
 anchor_top = 0.3
 anchor_right = 0.75
 anchor_bottom = 0.55
-offset_left = -21.0
-offset_top = 387.8
-offset_right = 52.0
-offset_bottom = 427.79993
+offset_left = -75.0
+offset_top = 346.8
+offset_right = 112.0
+offset_bottom = 432.8
 theme_override_constants/separation = 40
 alignment = 1
 
 [node name="Dice1" type="TextureRect" parent="DiceArea"]
 layout_mode = 2
-texture = ExtResource("2_1b3iq")
+texture = ExtResource("3_k05ng")
 expand_mode = 2
 stretch_mode = 4
 
 [node name="OperationLabel" type="Label" parent="DiceArea"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 100
-text = "+"
+theme_override_font_sizes/font_size = 250
+text = "l"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Dice2" type="TextureRect" parent="DiceArea"]
 layout_mode = 2
-texture = ExtResource("2_1b3iq")
+texture = ExtResource("4_k05ng")
 expand_mode = 2
 stretch_mode = 4
 
