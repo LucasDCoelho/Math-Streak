@@ -4,7 +4,7 @@ var operations = ["+", "-", "*", "/"]
 
 func _init():
 	randomize()
-	
+
 func generate_question() -> Dictionary:
 	var num1 = randi() % 6 + 1
 	var op = operations[randi() % operations.size()]
