@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bndwfmlfo1pe7"
+uid="uid://cv2spbtqujhb"
 path="res://.godot/imported/Inter_28pt-Italic.ttf-fd65059ce5af41930d086cd9f95be6ad.fontdata"
 
 [deps]
@@ -21,10 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-<<<<<<< HEAD
-=======
 modulate_color_glyphs=false
->>>>>>> 95ff528e4c27a4f68491395a2fd8723b865e0e9d
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

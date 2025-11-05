@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bpsdbus0p3tt3"
+uid="uid://c3cxlwdpj0uql"
 path="res://.godot/imported/Inter_24pt-ExtraBold.ttf-7320665b28a2f72addca9e1ceedcb75c.fontdata"
 
 [deps]
@@ -21,10 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-<<<<<<< HEAD
-=======
 modulate_color_glyphs=false
->>>>>>> 95ff528e4c27a4f68491395a2fd8723b865e0e9d
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

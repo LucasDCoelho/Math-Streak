@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://dejuo6m3gkjdp"
+uid="uid://c6ur5p2hrwoau"
 path="res://.godot/imported/Inter_24pt-ExtraLightItalic.ttf-77f048f4744cb04f8601c0d68f0a736a.fontdata"
 
 [deps]
@@ -21,10 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-<<<<<<< HEAD
-=======
 modulate_color_glyphs=false
->>>>>>> 95ff528e4c27a4f68491395a2fd8723b865e0e9d
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

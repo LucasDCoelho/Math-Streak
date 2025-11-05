@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://sq43wl4cn1y2"
+uid="uid://ci6dk2606vuvk"
 path="res://.godot/imported/Inter_28pt-Medium.ttf-731dcd19684286959d6654e80c0ee7ab.fontdata"
 
 [deps]
@@ -21,10 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-<<<<<<< HEAD
-=======
 modulate_color_glyphs=false
->>>>>>> 95ff528e4c27a4f68491395a2fd8723b865e0e9d
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

@@ -2,7 +2,7 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://bfylmwa4ij6v6"
+uid="uid://d3oj5slrc1my4"
 path="res://.godot/imported/Inter_18pt-BlackItalic.ttf-d914934190f54eef50482f183e3da812.fontdata"
 
 [deps]
@@ -21,10 +21,7 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-<<<<<<< HEAD
-=======
 modulate_color_glyphs=false
->>>>>>> 95ff528e4c27a4f68491395a2fd8723b865e0e9d
 hinting=1
 subpixel_positioning=4
 keep_rounding_remainders=true

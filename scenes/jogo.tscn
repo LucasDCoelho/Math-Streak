@@ -82,9 +82,6 @@ offset_top = -472.8
 offset_right = 708.0
 <<<<<<< HEAD
 offset_bottom = -309.8
-=======
-offset_bottom = -309.80005
->>>>>>> 95ff528e4c27a4f68491395a2fd8723b865e0e9d
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 60
