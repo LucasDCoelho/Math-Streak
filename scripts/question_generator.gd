@@ -5,12 +5,6 @@ var operations = ["+", "-", "*", "/"]
 func _init():
 	randomize()
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 0333f842f23c8eac56b9db523c083d303cb2fd2c
 func generate_question() -> Dictionary:
 	var num1 = randi() % 6 + 1
 	var op = operations[randi() % operations.size()]
