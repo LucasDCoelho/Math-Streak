@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyuiuo0uwkbqc"]
+[gd_scene load_steps=5 format=3 uid="uid://dyuiuo0uwkbqc"]
 
 [ext_resource type="Texture2D" uid="uid://cijk56r0xxgbr" path="res://assets/Gemini_Generated_Image_ogf5gxogf5gxogf5 1.png" id="1_hkbxb"]
 [ext_resource type="Script" uid="uid://bq1rci02wc1o8" path="res://scripts/tela_inicial.gd" id="1_xo13d"]
+[ext_resource type="FontFile" uid="uid://drdx0yinvpnd5" path="res://assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf" id="3_2o6u0"]
+[ext_resource type="FontFile" uid="uid://bfylmwa4ij6v6" path="res://assets/fonts/Inter/static/Inter_18pt-BlackItalic.ttf" id="3_hvj2l"]
 
 [node name="Tela Inicial" type="Control"]
 layout_mode = 3
@@ -30,6 +32,7 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 0, 1)
 theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_hvj2l")
 theme_override_font_sizes/font_size = 83
 text = "MATH
 STREAK"
@@ -52,14 +55,23 @@ grow_vertical = 2
 
 [node name="Play Game" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2o6u0")
 theme_override_font_sizes/font_size = 42
 text = "JOGAR
 "
 
+[node name="Ranking" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2o6u0")
+theme_override_font_sizes/font_size = 42
+text = "RANKING"
+
 [node name="Quit Game" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_2o6u0")
 theme_override_font_sizes/font_size = 42
 text = "SAIR"
 
 [connection signal="pressed" from="VBoxContainer/Play Game" to="." method="_on_play_game_pressed"]
+[connection signal="pressed" from="VBoxContainer/Ranking" to="." method="_on_ranking_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit Game" to="." method="_on_quit_game_pressed"]

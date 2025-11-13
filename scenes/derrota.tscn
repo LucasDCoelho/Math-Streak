@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://bw0sysbnxjpch"]
+[gd_scene load_steps=5 format=3 uid="uid://bw0sysbnxjpch"]
 
 [ext_resource type="Script" uid="uid://bqh32hmlh5nqc" path="res://scripts/derrota.gd" id="1_78d6e"]
 [ext_resource type="Texture2D" uid="uid://cijk56r0xxgbr" path="res://assets/Gemini_Generated_Image_ogf5gxogf5gxogf5 1.png" id="1_101bo"]
+[ext_resource type="FontFile" uid="uid://drdx0yinvpnd5" path="res://assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf" id="3_owb28"]
+[ext_resource type="FontFile" uid="uid://bfylmwa4ij6v6" path="res://assets/fonts/Inter/static/Inter_18pt-BlackItalic.ttf" id="3_u2eb1"]
 
 [node name="Derrota" type="Node"]
 script = ExtResource("1_78d6e")
@@ -29,23 +31,25 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.8715469, 0.8715464, 1.540184e-06, 1)
 theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_u2eb1")
 theme_override_font_sizes/font_size = 80
 text = "FIM DE JOGO"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Score" type="Label" parent="."]
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.469
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -172.0
-offset_top = -32.0
+offset_top = -67.25601
 offset_right = 172.0
-offset_bottom = 18.0
+offset_bottom = -49.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_owb28")
 theme_override_font_sizes/font_size = 40
 text = "    PONTUAÇÃO: 0"
 
@@ -64,7 +68,15 @@ grow_vertical = 0
 
 [node name="Return" type="Button" parent="VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_owb28")
 theme_override_font_sizes/font_size = 40
 text = "VOLTAR AO MENU"
 
+[node name="Ranking" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_owb28")
+theme_override_font_sizes/font_size = 42
+text = "RANKING"
+
 [connection signal="pressed" from="VBoxContainer/Return" to="." method="_on_return_pressed"]
+[connection signal="pressed" from="VBoxContainer/Ranking" to="." method="_on_ranking_pressed"]

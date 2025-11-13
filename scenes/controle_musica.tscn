@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://ba47c383sid26"]
+
+[ext_resource type="AudioStream" uid="uid://c20nyqipaxdw1" path="res://assets/Music Assets/Music Assets/AUD-20251029-WA0162.mp3" id="1_gpt2e"]
+
+[node name="ControleMusica" type="Node"]
+
+[node name="BackgroundMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_gpt2e")
+volume_db = -20.0
+autoplay = true

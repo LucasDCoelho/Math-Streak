@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8n38dp1s5qka"
+path="res://.godot/imported/AUD-20251111-WA0164.mp3-838d8220f1aededad64ca41133fdd812.mp3str"
+
+[deps]
+
+source_file="res://assets/Music Assets/Music Assets/AUD-20251111-WA0164.mp3"
+dest_files=["res://.godot/imported/AUD-20251111-WA0164.mp3-838d8220f1aededad64ca41133fdd812.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

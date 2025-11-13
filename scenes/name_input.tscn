@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfseldffwgaju"]
+
+[ext_resource type="Script" uid="uid://dw8miopey16v0" path="res://scripts/name_input.gd" id="1_ksk6y"]
+[ext_resource type="Texture2D" uid="uid://cijk56r0xxgbr" path="res://assets/Gemini_Generated_Image_ogf5gxogf5gxogf5 1.png" id="2_n65fe"]
+[ext_resource type="FontFile" uid="uid://drdx0yinvpnd5" path="res://assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf" id="3_t3j2b"]
+
+[node name="NameInput" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ksk6y")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1024.0
+texture = ExtResource("2_n65fe")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_direction = 4
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -256.36365
+offset_top = -188.0
+offset_right = 256.3636
+offset_bottom = 188.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 30
+placeholder_text = "AAA"
+alignment = 1
+max_length = 3
+
+[node name="Button" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_t3j2b")
+theme_override_font_sizes/font_size = 42
+text = "JOGAR"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 535.0
+offset_top = 380.0
+offset_right = 905.0
+offset_bottom = 432.0
+theme_override_fonts/font = ExtResource("3_t3j2b")
+theme_override_font_sizes/font_size = 42
+text = "Digite suas iniciais"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_button_pressed"]

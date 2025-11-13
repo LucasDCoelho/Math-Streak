@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbxqjjhpnlv0q"]
+
+[ext_resource type="Script" uid="uid://df2jp1ih1tdy7" path="res://scripts/ranking.gd" id="1_tmhu6"]
+[ext_resource type="Texture2D" uid="uid://cijk56r0xxgbr" path="res://assets/Gemini_Generated_Image_ogf5gxogf5gxogf5 1.png" id="2_6t2tb"]
+[ext_resource type="FontFile" uid="uid://bt7t5oqcv7yw0" path="res://assets/fonts/Inter/static/Inter_18pt-Bold.ttf" id="3_5masu"]
+[ext_resource type="FontFile" uid="uid://drdx0yinvpnd5" path="res://assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf" id="3_jv53m"]
+
+[node name="Ranking" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_tmhu6")
+
+[node name="background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1440.0
+offset_bottom = 1024.0
+texture = ExtResource("2_6t2tb")
+
+[node name="ScoreContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -341.0
+offset_right = 200.0
+offset_bottom = 341.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -97.5
+offset_top = -425.0
+offset_right = 97.5
+offset_bottom = -373.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_5masu")
+theme_override_font_sizes/font_size = 42
+text = "RANKING"
+
+[node name="Voltar" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -202.0
+offset_top = 342.0
+offset_right = 202.0
+offset_bottom = 410.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_jv53m")
+theme_override_font_sizes/font_size = 42
+text = "VOLTAR AO MENU"
+
+[connection signal="pressed" from="Voltar" to="." method="_on_voltar_pressed"]
