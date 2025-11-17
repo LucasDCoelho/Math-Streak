@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bejtrhg4b6l1e"]
+[gd_scene load_steps=11 format=3 uid="uid://bejtrhg4b6l1e"]
 
 [ext_resource type="Script" uid="uid://dssrlqu40ehht" path="res://scripts/jogo.gd" id="1_1b3iq"]
 [ext_resource type="Texture2D" uid="uid://cijk56r0xxgbr" path="res://assets/Gemini_Generated_Image_ogf5gxogf5gxogf5 1.png" id="1_sq8yp"]
@@ -6,7 +6,10 @@
 [ext_resource type="FontFile" uid="uid://drdx0yinvpnd5" path="res://assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf" id="3_ogo8m"]
 [ext_resource type="Texture2D" uid="uid://dypc3qmswve58" path="res://assets/Dice/Dice/diceRed2.png" id="4_k05ng"]
 [ext_resource type="AudioStream" uid="uid://c0awmc3me1v0l" path="res://assets/Music Assets/Music Assets/AUD-20251111-WA0166.mp3" id="5_4sjka"]
+[ext_resource type="Texture2D" uid="uid://bots35g8k25ba" path="res://assets/Arrows/arrow-left.png" id="6_drirx"]
 [ext_resource type="AudioStream" uid="uid://b0legv3ukc0a3" path="res://assets/Music Assets/Music Assets/AUD-20251111-WA0165.mp3" id="6_ogo8m"]
+[ext_resource type="Texture2D" uid="uid://bx2pmjhb2ttr" path="res://assets/Arrows/arrow-up.png" id="7_qbbxf"]
+[ext_resource type="Texture2D" uid="uid://dv77opfci38ue" path="res://assets/Arrows/arrow-right.png" id="8_t8n7k"]
 
 [node name="Jogo" type="Control"]
 layout_mode = 3
@@ -112,6 +115,15 @@ text = "0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TextureRect" type="TextureRect" parent="AnswersArea/AnswerLeft"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 274.0
+offset_right = 215.0
+offset_bottom = 366.0
+texture = ExtResource("6_drirx")
+expand_mode = 1
+
 [node name="AnswerUp" type="Panel" parent="AnswersArea"]
 custom_minimum_size = Vector2(300, 180)
 layout_mode = 2
@@ -134,6 +146,15 @@ theme_override_fonts/font = ExtResource("3_ogo8m")
 theme_override_font_sizes/font_size = 60
 text = "0"
 
+[node name="TextureRect" type="TextureRect" parent="AnswersArea/AnswerUp"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 273.0
+offset_right = 216.0
+offset_bottom = 365.0
+texture = ExtResource("7_qbbxf")
+expand_mode = 1
+
 [node name="AnswerRight" type="Panel" parent="AnswersArea"]
 custom_minimum_size = Vector2(300, 180)
 layout_mode = 2
@@ -155,6 +176,15 @@ grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_ogo8m")
 theme_override_font_sizes/font_size = 60
 text = "0"
+
+[node name="TextureRect" type="TextureRect" parent="AnswersArea/AnswerRight"]
+layout_mode = 0
+offset_left = 78.0
+offset_top = 271.0
+offset_right = 214.0
+offset_bottom = 363.0
+texture = ExtResource("8_t8n7k")
+expand_mode = 1
 
 [node name="SomAcerto" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_4sjka")
